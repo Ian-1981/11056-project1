@@ -18,6 +18,7 @@
 <body>
    <header>
     <div class="inner">
+        
         <h1>Canberra Modern</h1>
 
         <nav>
@@ -44,14 +45,14 @@
             <div class="hero-text">
               <h1 style="color: gray";>Welcome to Canberra Modern</h1>
 
-              <button>Join</button>
+              <div class="joinbutton"></div>
             </div>
           </div>
 
           <div>
-          <h2>Canberra is a young city with a rich architectural legacy. </h2>
-          <h2>With major boom periods in the 1920s and again from the 1950s-1980s – </h2>
-          <h2>the architectural aesthetic of the city is eclectic, but deliberately cohesive. </h2>
+          <h3>Canberra is a young city with a rich architectural legacy. 
+          With major boom periods in the 1920s and again from the 1950s-1980s – 
+          the architectural aesthetic of the city is eclectic, but deliberately cohesive. </h3>
         </div>
         <aside>
             <!-- images here-->
@@ -62,8 +63,9 @@
       
        <!-- the content in the gallery is multi-dimensional (uses both rows and columns), so we can use CSS grid -->
        <div class="gallery">
-        <div>
-            <h3>University House</h3>
+        <div class="test">
+            
+            <h3><a href="index.html">Callam House</a> </h3>
         </div>
         <div>
             <h3>Churchill House</h3>
@@ -152,6 +154,24 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.getElementById("myHeader");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
   </script>
 
     </div>
@@ -163,7 +183,7 @@ function showSlides(n) {
             <div class="container">
                 <div class="row">
                     <div class="footer-col">
-                        <h4>company</h4>
+                        <h4>Canberra Modern</h4>
                         <ul>
                             <li><a href="#">about us</a></li>
                             <li><a href="#">our services</a></li>
