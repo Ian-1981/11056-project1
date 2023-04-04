@@ -316,6 +316,7 @@ ul{
 	color: #ffffff;
 	padding-left: 8px;
 }
+/*
 .footer-col .social-links a{
 	display: inline-block;
 	height: 40px;
@@ -330,9 +331,9 @@ ul{
 }
 .footer-col .social-links a:hover{
 	color: #24262b;
-	background-color: #ffffff;
+    background-color: #ffffff;
 }
-
+*/
 /* Media Queries*/
 
 @media screen and (max-width: 500px){
