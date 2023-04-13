@@ -131,7 +131,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
   }
   
   /* Place text in the middle of the image */
